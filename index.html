@@ -26,10 +26,10 @@
                 </div>
 
                 <div class="thumbs">
+                    <div class="prev" @click="scrollUp"></div>
                     <div class="next" @click="scrollDown"></div>
-                    <div class="prev"></div>
                     <div class="thumb" v-for="(image, index) in slides" :key="index" :class="{ active: itemIndexActive === index }" @click="changeImage(index)">
-                        <img :src="currentImage.image" :alt="currentImage.title" />
+                        <img :src="image.image" :alt="image.title" />
                     </div>
             
                 </div>
