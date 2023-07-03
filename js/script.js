@@ -69,7 +69,7 @@ const app = createApp({
                 this.itemIndexActive--; // se lo è decrementa l'indice attivo di 1 per dare l'active ad un altra immagine
             }
             else{ // se l'indice attivo è gia 0, per la creazione di un effetto loop, l'indice viene decrementato e assegnat all'ultimo elemento dell'array
-                this.itemIndexActive = this.slides.length -1;
+                this.itemIndexActive = this.slides.length - 1;
             }
             this.thumbIndexActive = this.itemIndexActive; // assegniamo l'indice attivo al thumb con lo stesso indice, in modo da rendere l'elemento marcato, come se fosse selezionato, anche perche lo è xD
         },
